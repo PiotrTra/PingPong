@@ -6,6 +6,7 @@ import time
 
 screen = Screen()
 
+
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("PingPong")
@@ -42,6 +43,6 @@ while game_is_on:
         scoreboard.r_point()
 
     screen.update()
-    time.sleep(0.05)
+    time.sleep(ball.speed)
 
 screen.exitonclick()
